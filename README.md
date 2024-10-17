@@ -1,18 +1,23 @@
-## Getting Started
+This is a modifed version of BubbleSort but with MergeSort implemeneted. 
+It compare the 2 sorting algorithms and see which one is faster.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+How to use:
+```
+java -jar --enable-preview [jar file] [enter a integer or a text file]
+```
 
-## Folder Structure
+Example of output:
 
-The workspace contains two folders by default, where:
+```
+$ java -jar --enable-preview mergeSortBubbleSortCompare.jar 100000
+Generated random array of size 100000
+Is the intial array sorted? false
+Bubble Sort took 7497ms to sort the array
+Is the final array sorted? true
+Merge Sort took 10ms to sort the array
+Is the final array sorted? true
+Merge sort is faster by: 7487ms
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+This save the unsorted array and sorted array using both methods as a textfile. Generated arrays will have the number of generated numbers in the name of the text file. Passed in text files will not generate an unsorted array as you already have one. It will only generate the sorted one.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
